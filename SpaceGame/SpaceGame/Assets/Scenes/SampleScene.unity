@@ -365,6 +365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   balaPlayer: {fileID: 8863882642188697275, guid: 0b7f03ff6256d16419c98c4e23396bc8, type: 3}
+  player: 1
 --- !u!1 &602667935
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,6 +615,7 @@ GameObject:
   - component: {fileID: 1062885458}
   - component: {fileID: 1062885457}
   - component: {fileID: 1062885456}
+  - component: {fileID: 1062885461}
   m_Layer: 0
   m_Name: Enemigo1
   m_TagString: Enemigo
@@ -721,7 +723,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 4390284015211014507, guid: dd30af0ce3645d7448beb5de423a7279, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -745,6 +747,20 @@ Transform:
   m_Father: {fileID: 602667936}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1062885461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062885455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f2631873d671b49ace6535105c2541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balaPlayer: {fileID: 7610420133353310479, guid: 893ba5587cfa5d24e9d7c07ce554d49e, type: 3}
+  player: 0
 --- !u!1 &1880265277
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +774,7 @@ GameObject:
   - component: {fileID: 1880265279}
   - component: {fileID: 1880265278}
   - component: {fileID: 1880265282}
+  - component: {fileID: 1880265283}
   m_Layer: 0
   m_Name: Enemigo0
   m_TagString: Enemigo
@@ -853,7 +870,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 4390284015211014507, guid: dd30af0ce3645d7448beb5de423a7279, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -889,3 +906,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1880265283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880265277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f2631873d671b49ace6535105c2541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balaPlayer: {fileID: 7610420133353310479, guid: 893ba5587cfa5d24e9d7c07ce554d49e, type: 3}
+  player: 0

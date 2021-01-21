@@ -35,11 +35,7 @@ public class controladorEnemigo : MonoBehaviour
         }
         #endregion
 
-        /*float i = Random.Range(0, 1f);
-        if(i > 0.25)
-        {
 
-        }*/
 
     }
 

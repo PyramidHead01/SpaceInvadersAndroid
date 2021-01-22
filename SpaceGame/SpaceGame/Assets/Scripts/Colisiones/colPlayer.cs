@@ -4,6 +4,23 @@ using UnityEngine;
 
 public class colPlayer : MonoBehaviour
 {
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (/*col.gameObject.tag == "Enemigo" ||*/ col.gameObject.tag == "BalaEnemigo")
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Enemigo")
+        {
+            Destroy(gameObject);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {

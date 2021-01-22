@@ -5,7 +5,7 @@ using UnityEngine;
 public class colBalaPlayer : MonoBehaviour
 {
 
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Enemigo" || col.gameObject.tag == "BalaEnemigo")
         {

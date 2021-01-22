@@ -11,9 +11,17 @@ public class colEnemigo : MonoBehaviour
         {
 
         }
-        if (col.gameObject.tag == "BalaPlayer")
+        /*if (col.gameObject.tag == "BalaPlayer")
         {
             Debug.Log("asd");
+            Destroy(gameObject);
+        }*/
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "BalaPlayer")
+        {
             Destroy(gameObject);
         }
     }

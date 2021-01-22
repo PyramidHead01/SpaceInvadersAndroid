@@ -8,8 +8,8 @@ TagManager:
   - BalaEnemigo
   - contrEnemigos
   - Enemigo
-  - ParedIzq
-  - ParedDer
+  - Paredes
+  - SueloTecho
   layers:
   - Default
   - TransparentFX

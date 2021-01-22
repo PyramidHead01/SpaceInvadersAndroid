@@ -42,7 +42,7 @@ public class disparar : MonoBehaviour
                 if (i > 0.75)
                 {
 
-                    Debug.Log(transfObj.position);
+                    //Debug.Log(transfObj.position);
                     GameObject bala = Instantiate(balaPlayer, new Vector3(transfObj.position.x, (transfObj.position.y - 0.1f), transfObj.position.z), transfObj.rotation);
                     bala.GetComponent<Rigidbody2D>().velocity = new Vector3(0, -10, 0);
                 }

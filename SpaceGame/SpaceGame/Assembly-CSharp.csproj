@@ -60,6 +60,10 @@
     <Compile Include="Assets\Scripts\disparar.cs" />
     <Compile Include="Assets\Scripts\moverPlayer.cs" />
     <Compile Include="Assets\Scripts\controladorEnemigo.cs" />
+    <Compile Include="Assets\Scripts\Colisiones\colEnemigo.cs" />
+    <Compile Include="Assets\Scripts\Colisiones\colBalaEnemiga.cs" />
+    <Compile Include="Assets\Scripts\Colisiones\colBalaPlayer.cs" />
+    <Compile Include="Assets\Scripts\Colisiones\colPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -7,7 +7,7 @@ public class colBalaEnemiga : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Player" || col.gameObject.tag == "BalaPlayer")
+        if (col.gameObject.tag == "Player" || col.gameObject.tag == "BalaPlayer" || col.gameObject.tag == "SueloTecho")
         {
             Destroy(gameObject);
         }

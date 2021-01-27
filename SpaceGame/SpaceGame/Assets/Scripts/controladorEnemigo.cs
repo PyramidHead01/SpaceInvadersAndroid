@@ -30,7 +30,8 @@ public class controladorEnemigo : MonoBehaviour
         if (contador >= 1)
         {
 
-            speed = CambiarSpeed();
+            //speed = CambiarSpeed();
+            speed = 0.5f;
 
             //Si la variable de movimientoPos es true, los aliens se moveran hacia la derecha, y en el caso de que sea false, sera hacia la izquierda
             #region MovimientoEnemigos
@@ -75,21 +76,8 @@ public class controladorEnemigo : MonoBehaviour
         {
             controladorEnemigos.movimientoPos = false;
 
-            posEnemgios.position = new Vector3(posEnemgios.position.x, posEnemgios.position.y - 0.5f, posEnemgios.position.z);
+            //posEnemgios.position = new Vector3(posEnemgios.position.x, posEnemgios.position.y - 0.5f, posEnemgios.position.z);
 
-            /*if (!controladorEnemigos.movimientoPos)
-            {
-                controladorEnemigos.movimientoPos = false;
-                posEnemgios.position = new Vector3(posEnemgios.position.x, posEnemgios.position.y - 0.5f, posEnemgios.position.z);
-                //this.transform.position = new Vector3(this.transform.position.x - 0.1f, this.transform.position.y - 0.5f, this.transform.position.z);
-            }
-
-            else
-            {
-                controladorEnemigos.movimientoPos = true;
-                posEnemgios.position = new Vector3(posEnemgios.position.x , posEnemgios.position.y - 0.5f, posEnemgios.position.z);
-                //this.transform.position = new Vector3(this.transform.position.x + 0.1f, this.transform.position.y - 0.5f, this.transform.position.z);
-            }*/
         }
 
         if (collision.gameObject.tag == "ParIzqu")
@@ -97,21 +85,13 @@ public class controladorEnemigo : MonoBehaviour
 
             controladorEnemigos.movimientoPos = true;
 
-            posEnemgios.position = new Vector3(posEnemgios.position.x, posEnemgios.position.y - 0.5f, posEnemgios.position.z);
+            //posEnemgios.position = new Vector3(posEnemgios.position.x, posEnemgios.position.y - 0.5f, posEnemgios.position.z);
 
-            /*if (!controladorEnemigos.movimientoPos)
-            {
-                controladorEnemigos.movimientoPos = false;
-                posEnemgios.position = new Vector3(posEnemgios.position.x, posEnemgios.position.y - 0.5f, posEnemgios.position.z);
-                //this.transform.position = new Vector3(this.transform.position.x - 0.1f, this.transform.position.y - 0.5f, this.transform.position.z);
-            }
+        }
 
-            else
-            {
-                controladorEnemigos.movimientoPos = true;
-                posEnemgios.position = new Vector3(posEnemgios.position.x , posEnemgios.position.y - 0.5f, posEnemgios.position.z);
-                //this.transform.position = new Vector3(this.transform.position.x + 0.1f, this.transform.position.y - 0.5f, this.transform.position.z);
-            }*/
+        if (collision.gameObject.tag == "ParIzqu" || collision.gameObject.tag == "ParDer")
+        {
+            posEnemgios.position = new Vector3(posEnemgios.position.x, posEnemgios.position.y - 0.25f, posEnemgios.position.z);
         }
 
         #endregion

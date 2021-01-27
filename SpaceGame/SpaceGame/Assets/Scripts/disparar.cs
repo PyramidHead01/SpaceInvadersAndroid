@@ -7,6 +7,7 @@ public class disparar : MonoBehaviour
 
     public AudioClip sonDisparo;
     public GameObject balaPlayer;
+    public float tMax;
     public bool player = false;
     Transform transfObj;
     AudioSource efectosSonido;
@@ -32,7 +33,7 @@ public class disparar : MonoBehaviour
     {
         contador += Time.deltaTime;
 
-        if (contador >= 1)
+        if (contador >= tMax)
         {
             
 
@@ -51,7 +52,7 @@ public class disparar : MonoBehaviour
             else
             {
                 float i = Random.Range(0, 1f);
-                if (i > CalcularPorcentaje())
+                if (i > 0.99f)// CalcularPorcentaje())
                 {
                     GameObject bala = Instantiate(balaPlayer, new Vector3(transfObj.position.x, (transfObj.position.y - 0.1f), transfObj.position.z), transfObj.rotation);
                     bala.GetComponent<Rigidbody2D>().velocity = new Vector3(0, -10, 0);

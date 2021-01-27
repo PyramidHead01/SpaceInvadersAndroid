@@ -8,11 +8,12 @@ TagManager:
   - BalaEnemigo
   - contrEnemigos
   - Enemigo
-  - Paredes
   - SueloTecho
   - SonIdoEfectos
   - SonIdoFondo
   - Muro
+  - ParIzqu
+  - ParDer
   layers:
   - Default
   - TransparentFX

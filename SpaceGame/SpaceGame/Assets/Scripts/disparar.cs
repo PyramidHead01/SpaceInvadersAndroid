@@ -10,6 +10,7 @@ public class disparar : MonoBehaviour
     public bool player = false;
     Transform transfObj;
     AudioSource efectosSonido;
+    controladorEnemigos controladorEnemigos;
 
     float contador = 5;
 
@@ -18,6 +19,7 @@ public class disparar : MonoBehaviour
         //Le doy a las variables los compontes respectivos
         #region AsignarVariables
         efectosSonido = GameObject.FindWithTag("SonIdoEfectos").GetComponent<AudioSource>();
+        controladorEnemigos = GameObject.FindWithTag("contrEnemigos").GetComponent<controladorEnemigos>();
         #endregion
     }
 
@@ -48,12 +50,9 @@ public class disparar : MonoBehaviour
 
             else
             {
-
                 float i = Random.Range(0, 1f);
-                if (i > 0.75)
+                if (i > CalcularPorcentaje())
                 {
-
-                    //Debug.Log(transfObj.position);
                     GameObject bala = Instantiate(balaPlayer, new Vector3(transfObj.position.x, (transfObj.position.y - 0.1f), transfObj.position.z), transfObj.rotation);
                     bala.GetComponent<Rigidbody2D>().velocity = new Vector3(0, -10, 0);
                     efectosSonido.PlayOneShot(sonDisparo);
@@ -65,4 +64,19 @@ public class disparar : MonoBehaviour
 
         }
     }
+    
+    float CalcularPorcentaje()
+    {
+
+        if (controladorEnemigos.enemigosActuales == controladorEnemigos.enemigosTotales || controladorEnemigos.enemigosActuales + 1 == controladorEnemigos.enemigosTotales)
+            return 0.975f;
+
+        float num = 0.975f / controladorEnemigos.enemigosTotales;
+
+        num *= (controladorEnemigos.enemigosActuales + 1);
+
+        return num;
+
+    }
+
 }

@@ -12,6 +12,7 @@ TagManager:
   - SueloTecho
   - SonIdoEfectos
   - SonIdoFondo
+  - Muro
   layers:
   - Default
   - TransparentFX

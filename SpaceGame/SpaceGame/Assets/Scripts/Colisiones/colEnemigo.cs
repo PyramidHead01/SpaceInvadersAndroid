@@ -5,6 +5,7 @@ using UnityEngine;
 public class colEnemigo : MonoBehaviour
 {
 
+    controladorEnemigos controladorEnemigos;
     public AudioClip clipMuerte;
     AudioSource sonMuerte;
 
@@ -13,6 +14,7 @@ public class colEnemigo : MonoBehaviour
         //Le doy a las variables los compontes respectivos
         #region AsignarVariables
         sonMuerte = GameObject.FindWithTag("SonIdoEfectos").GetComponent<AudioSource>();
+        controladorEnemigos = GameObject.FindWithTag("contrEnemigos").GetComponent<controladorEnemigos>();
         #endregion
     }
 
@@ -34,6 +36,7 @@ public class colEnemigo : MonoBehaviour
         if (col.gameObject.tag == "BalaPlayer")
         {
             sonMuerte.PlayOneShot(clipMuerte);
+            controladorEnemigos.enemigosActuales--;
             Destroy(gameObject);
         }
     }

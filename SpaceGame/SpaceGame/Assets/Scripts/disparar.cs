@@ -31,12 +31,11 @@ public class disparar : MonoBehaviour
 
     void Update()
     {
+
         contador += Time.deltaTime;
 
         if (contador >= tMax)
         {
-            
-
             if(player)
             {
                 if (Input.GetKeyDown(KeyCode.Space))
@@ -46,27 +45,16 @@ public class disparar : MonoBehaviour
                     bala.GetComponent<Rigidbody2D>().velocity = new Vector3(0, 10, 0);
                     contador = 0;
                 }
-
             }               
-
-            else
-            {
-                float i = Random.Range(0, 1f);
-                controladorEnemigos.probabilidad = controladorEnemigos.CalcularProbabilidad();
-                //controladorEnemigos.p = controladorEnemigos.probabilidad;
-                if (i > controladorEnemigos.probabilidad)
-                {
-                    GameObject bala = Instantiate(balaPlayer, new Vector3(transfObj.position.x, (transfObj.position.y - 0.1f), transfObj.position.z), transfObj.rotation);
-                    bala.GetComponent<Rigidbody2D>().velocity = new Vector3(0, -10, 0);
-                    efectosSonido.PlayOneShot(sonDisparo);
-                }
-                contador = 0;
-            }
-                
-
-
         }
     }
-    
+
+    public void DisparoEnemigo()
+    {
+        GameObject bala = Instantiate(balaPlayer, new Vector3(transfObj.position.x, (transfObj.position.y - 0.1f), transfObj.position.z), transfObj.rotation);
+        bala.GetComponent<Rigidbody2D>().velocity = new Vector3(0, -10, 0);
+        efectosSonido.PlayOneShot(sonDisparo);
+        contador = 0;
+    }
 
 }

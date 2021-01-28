@@ -5233,12 +5233,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 534c1941df8768e4da4a99f25a7e6d7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disparar:
+  - {fileID: 1062885461}
+  - {fileID: 450614021}
+  - {fileID: 208189700}
+  - {fileID: 624973615}
+  - {fileID: 1579200705}
+  - {fileID: 729372367}
+  - {fileID: 946824242}
+  - {fileID: 873444366}
+  - {fileID: 1752748974}
+  - {fileID: 1374255697}
+  - {fileID: 53417807}
+  - {fileID: 1063405613}
+  - {fileID: 1640894296}
+  - {fileID: 555672843}
+  - {fileID: 1047453992}
+  - {fileID: 233462962}
+  - {fileID: 465820111}
+  - {fileID: 2130253649}
+  - {fileID: 930430917}
+  - {fileID: 901604704}
+  - {fileID: 794134344}
+  - {fileID: 1364899074}
+  - {fileID: 471633272}
+  - {fileID: 1195897456}
+  - {fileID: 467156182}
+  - {fileID: 561422658}
+  - {fileID: 1917802430}
+  - {fileID: 272610947}
+  - {fileID: 265021134}
+  - {fileID: 435025379}
+  - {fileID: 1428732102}
+  - {fileID: 1569054057}
+  - {fileID: 608757934}
+  - {fileID: 670858543}
+  - {fileID: 394181165}
+  - {fileID: 2105005676}
+  - {fileID: 207808345}
+  - {fileID: 85470811}
+  - {fileID: 1812759842}
+  - {fileID: 1803111502}
+  - {fileID: 2058954177}
+  - {fileID: 519819216}
+  - {fileID: 1817201774}
+  - {fileID: 299273913}
+  - {fileID: 2005877250}
+  - {fileID: 784750837}
+  - {fileID: 1022902493}
+  - {fileID: 1829073153}
+  - {fileID: 2073003650}
+  - {fileID: 873248933}
+  - {fileID: 97634339}
+  - {fileID: 1791486789}
+  - {fileID: 1441700434}
+  - {fileID: 571110018}
+  - {fileID: 1708625183}
+  tMax: 1
   movimientoPos: 1
   enemigosTotales: 55
   enemigosActuales: 55
-  speed: 0.5
-  probabilidad: 0.99
-  p: 0.99
+  speed: 0.05
 --- !u!1 &608757931
 GameObject:
   m_ObjectHideFlags: 0

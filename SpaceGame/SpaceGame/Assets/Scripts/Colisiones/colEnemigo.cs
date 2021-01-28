@@ -36,10 +36,12 @@ public class colEnemigo : MonoBehaviour
         if (col.gameObject.tag == "BalaPlayer")
         {
             sonMuerte.PlayOneShot(clipMuerte);
-            controladorEnemigos.enemigosActuales--;
+            controladorEnemigos.speed = controladorEnemigos.CambiarSpeed();
             Destroy(gameObject);
         }
     }
+
+
 
     // Start is called before the first frame update
     void Start()

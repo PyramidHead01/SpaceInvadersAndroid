@@ -8,7 +8,6 @@ public class controladorEnemigo : MonoBehaviour
     #region Variables
     Transform posEnemgios;
     controladorEnemigos controladorEnemigos;
-    public float speed = 0.4f;
     float contador = 0;
     #endregion
 
@@ -24,48 +23,28 @@ public class controladorEnemigo : MonoBehaviour
     void Update()
     {
 
-
         contador += Time.deltaTime;
 
         if (contador >= 1)
         {
 
-            //speed = CambiarSpeed();
-            speed = 0.5f;
+            //speed = 0.5f;
 
             //Si la variable de movimientoPos es true, los aliens se moveran hacia la derecha, y en el caso de que sea false, sera hacia la izquierda
             #region MovimientoEnemigos
             if (controladorEnemigos.movimientoPos)
             {
-                this.transform.position = new Vector3(this.transform.position.x + speed, this.transform.position.y, this.transform.position.z);
+                this.transform.position = new Vector3(this.transform.position.x + controladorEnemigos.speed, this.transform.position.y, this.transform.position.z);
             }
             else
             {
-                Debug.Log("ASASDASDQWEQ");
-                this.transform.position = new Vector3(this.transform.position.x - speed, this.transform.position.y, this.transform.position.z);
+                this.transform.position = new Vector3(this.transform.position.x - controladorEnemigos.speed, this.transform.position.y, this.transform.position.z);
             }
             #endregion
 
 
             contador = 0;
         }
-
-
-
-
-
-    }
-
-    float CambiarSpeed()
-    {
-        if (controladorEnemigos.enemigosActuales == controladorEnemigos.enemigosTotales || controladorEnemigos.enemigosActuales+1 == controladorEnemigos.enemigosTotales)
-            return 1;
-
-        float num = 1 / controladorEnemigos.enemigosTotales;
-
-        num *= (controladorEnemigos.enemigosActuales + 1);
-
-        return num;
     }
 
     void OnTriggerEnter2D(Collider2D collision)

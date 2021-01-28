@@ -479,7 +479,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &53417809
 Rigidbody2D:
   serializedVersion: 4
@@ -655,7 +654,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &85470813
 Rigidbody2D:
   serializedVersion: 4
@@ -831,7 +829,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &97634341
 Rigidbody2D:
   serializedVersion: 4
@@ -1409,7 +1406,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &207808347
 Rigidbody2D:
   serializedVersion: 4
@@ -1585,7 +1581,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &208189702
 Rigidbody2D:
   serializedVersion: 4
@@ -1761,7 +1756,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &233462964
 Rigidbody2D:
   serializedVersion: 4
@@ -2183,7 +2177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &265021136
 Rigidbody2D:
   serializedVersion: 4
@@ -2359,7 +2352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &272610949
 Rigidbody2D:
   serializedVersion: 4
@@ -2658,7 +2650,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &299273915
 Rigidbody2D:
   serializedVersion: 4
@@ -2957,7 +2948,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &394181167
 Rigidbody2D:
   serializedVersion: 4
@@ -3133,7 +3123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &435025381
 Rigidbody2D:
   serializedVersion: 4
@@ -3342,7 +3331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &450614023
 Rigidbody2D:
   serializedVersion: 4
@@ -3518,7 +3506,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &465820113
 Rigidbody2D:
   serializedVersion: 4
@@ -3694,7 +3681,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &467156184
 Rigidbody2D:
   serializedVersion: 4
@@ -3870,7 +3856,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &471633274
 Rigidbody2D:
   serializedVersion: 4
@@ -4228,7 +4213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &519819218
 Rigidbody2D:
   serializedVersion: 4
@@ -4404,7 +4388,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &555672845
 Rigidbody2D:
   serializedVersion: 4
@@ -4756,7 +4739,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &561422660
 Rigidbody2D:
   serializedVersion: 4
@@ -4932,7 +4914,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &571110020
 Rigidbody2D:
   serializedVersion: 4
@@ -5253,8 +5234,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movimientoPos: 1
-  enemigosActuales: 24
-  enemigosTotales: 0
+  enemigosTotales: 55
+  enemigosActuales: 55
+  speed: 0.5
+  probabilidad: 0.99
+  p: 0.99
 --- !u!1 &608757931
 GameObject:
   m_ObjectHideFlags: 0
@@ -5332,7 +5316,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &608757936
 Rigidbody2D:
   serializedVersion: 4
@@ -5508,7 +5491,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &624973617
 Rigidbody2D:
   serializedVersion: 4
@@ -6057,7 +6039,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &670858545
 Rigidbody2D:
   serializedVersion: 4
@@ -6233,7 +6214,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &729372369
 Rigidbody2D:
   serializedVersion: 4
@@ -6532,7 +6512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &784750839
 Rigidbody2D:
   serializedVersion: 4
@@ -6831,7 +6810,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &794134346
 Rigidbody2D:
   serializedVersion: 4
@@ -7130,7 +7108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &873248935
 Rigidbody2D:
   serializedVersion: 4
@@ -7306,7 +7283,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &873444368
 Rigidbody2D:
   serializedVersion: 4
@@ -7482,7 +7458,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &901604706
 Rigidbody2D:
   serializedVersion: 4
@@ -7658,7 +7633,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &930430919
 Rigidbody2D:
   serializedVersion: 4
@@ -7834,7 +7808,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &946824244
 Rigidbody2D:
   serializedVersion: 4
@@ -8133,7 +8106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1022902495
 Rigidbody2D:
   serializedVersion: 4
@@ -8499,7 +8471,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1047453994
 Rigidbody2D:
   serializedVersion: 4
@@ -8664,7 +8635,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1062885457
 Rigidbody2D:
   serializedVersion: 4
@@ -8883,7 +8853,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1063405615
 Rigidbody2D:
   serializedVersion: 4
@@ -9215,7 +9184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1195897458
 Rigidbody2D:
   serializedVersion: 4
@@ -9816,7 +9784,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1364899076
 Rigidbody2D:
   serializedVersion: 4
@@ -9992,7 +9959,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1374255699
 Rigidbody2D:
   serializedVersion: 4
@@ -10291,7 +10257,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1428732104
 Rigidbody2D:
   serializedVersion: 4
@@ -10467,7 +10432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1441700436
 Rigidbody2D:
   serializedVersion: 4
@@ -10749,7 +10713,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1569054059
 Rigidbody2D:
   serializedVersion: 4
@@ -10925,7 +10888,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1579200707
 Rigidbody2D:
   serializedVersion: 4
@@ -11213,7 +11175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1640894298
 Rigidbody2D:
   serializedVersion: 4
@@ -11635,7 +11596,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1708625185
 Rigidbody2D:
   serializedVersion: 4
@@ -12057,7 +12017,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1752748976
 Rigidbody2D:
   serializedVersion: 4
@@ -12233,7 +12192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1791486791
 Rigidbody2D:
   serializedVersion: 4
@@ -12409,7 +12367,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1803111504
 Rigidbody2D:
   serializedVersion: 4
@@ -12831,7 +12788,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1812759844
 Rigidbody2D:
   serializedVersion: 4
@@ -13007,7 +12963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1817201776
 Rigidbody2D:
   serializedVersion: 4
@@ -13183,7 +13138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1829073155
 Rigidbody2D:
   serializedVersion: 4
@@ -13515,7 +13469,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &1917802432
 Rigidbody2D:
   serializedVersion: 4
@@ -13691,7 +13644,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &2005877252
 Rigidbody2D:
   serializedVersion: 4
@@ -13990,7 +13942,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &2058954179
 Rigidbody2D:
   serializedVersion: 4
@@ -14289,7 +14240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &2073003652
 Rigidbody2D:
   serializedVersion: 4
@@ -14592,7 +14542,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &2105005678
 Rigidbody2D:
   serializedVersion: 4
@@ -14768,7 +14717,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!50 &2130253651
 Rigidbody2D:
   serializedVersion: 4

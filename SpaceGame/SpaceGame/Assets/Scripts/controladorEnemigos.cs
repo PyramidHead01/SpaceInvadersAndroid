@@ -6,17 +6,36 @@ public class controladorEnemigos : MonoBehaviour
 {
 
     public bool movimientoPos = true;
-    public int enemigosActuales, enemigosTotales;
+    public int enemigosTotales = 55, enemigosActuales;
+    public float speed = 0.5f, probabilidad = 0.99f, p = 0.99f;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        enemigosTotales = enemigosActuales + 1;
+        enemigosActuales = enemigosTotales;
     }
 
-    // Update is called once per frame
-    void Update()
+    public float CambiarSpeed()
     {
-        
+
+        enemigosActuales--;
+
+        if (enemigosActuales == enemigosTotales)
+            return speed;
+
+        //Quizas ajustar la velocidad despues???
+        return ((speed * enemigosTotales) / enemigosActuales);
+
     }
+
+    public float CalcularProbabilidad()
+    {
+
+        if (enemigosActuales == enemigosTotales)
+            return probabilidad;
+
+        return ((p * enemigosActuales) / enemigosTotales);
+
+    }
+
+
 }

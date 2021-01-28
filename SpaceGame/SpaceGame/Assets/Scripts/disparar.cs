@@ -52,7 +52,9 @@ public class disparar : MonoBehaviour
             else
             {
                 float i = Random.Range(0, 1f);
-                if (i > 0.99f)// CalcularPorcentaje())
+                controladorEnemigos.probabilidad = controladorEnemigos.CalcularProbabilidad();
+                //controladorEnemigos.p = controladorEnemigos.probabilidad;
+                if (i > controladorEnemigos.probabilidad)
                 {
                     GameObject bala = Instantiate(balaPlayer, new Vector3(transfObj.position.x, (transfObj.position.y - 0.1f), transfObj.position.z), transfObj.rotation);
                     bala.GetComponent<Rigidbody2D>().velocity = new Vector3(0, -10, 0);
@@ -66,18 +68,5 @@ public class disparar : MonoBehaviour
         }
     }
     
-    float CalcularPorcentaje()
-    {
-
-        if (controladorEnemigos.enemigosActuales == controladorEnemigos.enemigosTotales || controladorEnemigos.enemigosActuales + 1 == controladorEnemigos.enemigosTotales)
-            return 0.975f;
-
-        float num = 0.975f / controladorEnemigos.enemigosTotales;
-
-        num *= (controladorEnemigos.enemigosActuales + 1);
-
-        return num;
-
-    }
 
 }

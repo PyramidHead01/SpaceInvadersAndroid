@@ -14,6 +14,7 @@ TagManager:
   - Muro
   - ParIzqu
   - ParDer
+  - Vida
   layers:
   - Default
   - TransparentFX

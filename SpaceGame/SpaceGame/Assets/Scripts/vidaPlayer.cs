@@ -10,20 +10,28 @@ public class vidaPlayer : MonoBehaviour
     int vidaAnt = 3;
     public Image[] imgVidas;
     public Text txVidas;
+    GameObject playerInGame;
+    public GameObject playerPrefab;
+    public float tiempoRenacer;
 
-    // Start is called before the first frame update
+    void Awake()
+    {
+        playerInGame = GameObject.FindWithTag("Player");
+    }
+
     void Start()
     {
         txVidas.text = vida.ToString();
     }
 
-    // Update is called once per frame
     void Update()
     {
 
         if(vida == 0)
         {
-            Destroy(gameObject);
+            Destroy(playerInGame);
+            Debug.Log("YOU DIED");
+            txVidas.text = "YOU DIED BITCH";
         }
 
         if(vidaAnt != vida)
@@ -33,7 +41,18 @@ public class vidaPlayer : MonoBehaviour
             txVidas.text = vida.ToString();
 
             Destroy(imgVidas[vida]);
+            Destroy(playerInGame);
+
+            StartCoroutine(Renacer());
 
         }   
+    }
+
+    IEnumerator Renacer()
+    {
+        yield return new WaitForSeconds(tiempoRenacer);
+
+        Instantiate(playerPrefab);
+        Awake();
     }
 }

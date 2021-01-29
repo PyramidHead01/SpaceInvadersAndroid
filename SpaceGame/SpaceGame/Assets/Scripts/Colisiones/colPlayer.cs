@@ -14,7 +14,7 @@ public class colPlayer : MonoBehaviour
         //Le doy a las variables los compontes respectivos
         #region AsignarVariables
         sonMuerte = GameObject.FindWithTag("SonIdoEfectos").GetComponent<AudioSource>();
-        vidaPlayer = GameObject.FindWithTag("Player").GetComponent<vidaPlayer>();
+        vidaPlayer = GameObject.FindWithTag("Vida").GetComponent<vidaPlayer>();
         #endregion
     }
 

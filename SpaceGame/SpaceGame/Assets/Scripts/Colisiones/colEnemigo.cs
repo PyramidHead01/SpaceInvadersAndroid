@@ -9,12 +9,15 @@ public class colEnemigo : MonoBehaviour
     public AudioClip clipMuerte;
     AudioSource sonMuerte;
 
+    //vidaPlayer vidaPlayer;
+
     void Awake()
     {
         //Le doy a las variables los compontes respectivos
         #region AsignarVariables
         sonMuerte = GameObject.FindWithTag("SonIdoEfectos").GetComponent<AudioSource>();
         controladorEnemigos = GameObject.FindWithTag("contrEnemigos").GetComponent<controladorEnemigos>();
+        //vidaPlayer = GameObject.FindWithTag("Player").GetComponent<vidaPlayer>();
         #endregion
     }
 
@@ -22,7 +25,7 @@ public class colEnemigo : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-
+            //vidaPlayer.vida--;
         }
         /*if (col.gameObject.tag == "BalaPlayer")
         {
@@ -41,17 +44,4 @@ public class colEnemigo : MonoBehaviour
         }
     }
 
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

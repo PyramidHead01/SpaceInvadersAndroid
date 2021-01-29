@@ -7,12 +7,14 @@ public class colPlayer : MonoBehaviour
 
     public AudioClip clipMuerte;
     AudioSource sonMuerte;
+    vidaPlayer vidaPlayer;
 
     void Awake()
     {
         //Le doy a las variables los compontes respectivos
         #region AsignarVariables
         sonMuerte = GameObject.FindWithTag("SonIdoEfectos").GetComponent<AudioSource>();
+        vidaPlayer = GameObject.FindWithTag("Player").GetComponent<vidaPlayer>();
         #endregion
     }
 
@@ -35,7 +37,8 @@ public class colPlayer : MonoBehaviour
     void Muerte()
     {
         sonMuerte.PlayOneShot(clipMuerte);
-        Destroy(gameObject);
+        vidaPlayer.vida--;
+        //Destroy(gameObject);
     }
 
 }

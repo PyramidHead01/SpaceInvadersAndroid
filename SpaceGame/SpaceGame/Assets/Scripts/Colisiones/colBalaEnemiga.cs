@@ -5,21 +5,28 @@ using UnityEngine;
 public class colBalaEnemiga : MonoBehaviour
 {
 
+    /*vidaPlayer vidaPlayer;
+    
+    void Awake()
+    {
+        vidaPlayer = GameObject.FindWithTag("Player").GetComponent<vidaPlayer>();
+    }*/
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player" || col.gameObject.tag == "BalaPlayer" || col.gameObject.tag == "SueloTecho" || col.gameObject.tag == "Muro")
         {
-            Destroy(gameObject);
+
+            /*if(col.gameObject.tag == "Player")
+            {
+                vidaPlayer.vida--;
+                Destroy(gameObject);
+            }
+            else*/
+                Destroy(gameObject);
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         

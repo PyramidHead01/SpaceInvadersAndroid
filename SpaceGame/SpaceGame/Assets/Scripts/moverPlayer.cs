@@ -24,4 +24,15 @@ public class moverPlayer : MonoBehaviour
             this.transform.position = new Vector3(this.transform.position.x - (speed * Time.deltaTime), this.transform.position.y, this.transform.position.z);
         }
     }
+
+    public void MoverDerecha()
+    {
+        this.transform.position += new Vector3((speed * Time.deltaTime), 0, 0);
+    }
+
+    public void MoverIzquierda()
+    {
+        this.transform.position += new Vector3(-(speed * Time.deltaTime), 0, 0);
+    }
+
 }

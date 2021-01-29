@@ -36,7 +36,7 @@ public class disparar : MonoBehaviour
 
         if (contador >= tMax)
         {
-            if(player)
+            if (player)
             {
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
@@ -45,9 +45,23 @@ public class disparar : MonoBehaviour
                     bala.GetComponent<Rigidbody2D>().velocity = new Vector3(0, 10, 0);
                     contador = 0;
                 }
-            }               
+            }
+        }
+
+    }
+
+
+    public void DispPlayer()
+    {
+        if (contador >= tMax)
+        {
+            GameObject bala = Instantiate(balaPlayer, transfObj.position, transfObj.rotation);
+            efectosSonido.PlayOneShot(sonDisparo);
+            bala.GetComponent<Rigidbody2D>().velocity = new Vector3(0, 10, 0);
+            contador = 0;
         }
     }
+
 
     public void DisparoEnemigo()
     {

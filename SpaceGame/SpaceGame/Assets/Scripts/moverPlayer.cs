@@ -1,16 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using System.Collections;
 
 public class moverPlayer : MonoBehaviour
 {
 
     public float speed = 5;
+    Rigidbody2D rb;
+    
+    //Los controladores de los botones para moverse (esto no es en array porque peta)
+     controladorBotones contrBotIzq;
+     controladorBotones contrBotDer;
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
+
+        contrBotIzq = GameObject.FindWithTag("BotIzq").GetComponent<controladorBotones>();
+        contrBotDer = GameObject.FindWithTag("BotDer").GetComponent<controladorBotones>();
     }
 
     // Update is called once per frame
@@ -23,16 +31,11 @@ public class moverPlayer : MonoBehaviour
         {
             this.transform.position = new Vector3(this.transform.position.x - (speed * Time.deltaTime), this.transform.position.y, this.transform.position.z);
         }
-    }
 
-    public void MoverDerecha()
-    {
-        this.transform.position += new Vector3((speed * Time.deltaTime), 0, 0);
-    }
+        if (contrBotIzq.pulsado == false && contrBotDer.pulsado == false)
+            rb.velocity = Vector2.zero;
 
-    public void MoverIzquierda()
-    {
-        this.transform.position += new Vector3(-(speed * Time.deltaTime), 0, 0);
-    }
 
+
+    }
 }

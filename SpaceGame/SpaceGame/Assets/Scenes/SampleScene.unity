@@ -1407,9 +1407,10 @@ GameObject:
   - component: {fileID: 198827293}
   - component: {fileID: 198827292}
   - component: {fileID: 198827291}
+  - component: {fileID: 198827294}
   m_Layer: 5
-  m_Name: Derecha
-  m_TagString: Untagged
+  m_Name: BotDer
+  m_TagString: BotDer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1528,6 +1529,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198827289}
   m_CullTransparentMesh: 1
+--- !u!114 &198827294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198827289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60dfaf68a4abcb42a14f87cb8d62a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pulsado: 0
+  lado: 1
 --- !u!1 &207808342
 GameObject:
   m_ObjectHideFlags: 0
@@ -4699,9 +4714,10 @@ GameObject:
   - component: {fileID: 527396276}
   - component: {fileID: 527396275}
   - component: {fileID: 527396274}
+  - component: {fileID: 527396277}
   m_Layer: 5
-  m_Name: Izquierda
-  m_TagString: Untagged
+  m_Name: BotIzq
+  m_TagString: BotIzq
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4820,6 +4836,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527396272}
   m_CullTransparentMesh: 1
+--- !u!114 &527396277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527396272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60dfaf68a4abcb42a14f87cb8d62a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pulsado: 0
+  lado: 0
 --- !u!1 &555672840
 GameObject:
   m_ObjectHideFlags: 0
@@ -15959,6 +15989,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4044619525879189280, guid: 9885b7c7285c74049b9601b3462c7990, type: 3}
+      propertyPath: controladorBotones.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044619525879189280, guid: 9885b7c7285c74049b9601b3462c7990, type: 3}
+      propertyPath: controladorBotones.Array.data[0]
+      value: 
+      objectReference: {fileID: 527396277}
+    - target: {fileID: 4044619525879189280, guid: 9885b7c7285c74049b9601b3462c7990, type: 3}
+      propertyPath: controladorBotones.Array.data[1]
+      value: 
+      objectReference: {fileID: 198827294}
     - target: {fileID: 4044619525879189282, guid: 9885b7c7285c74049b9601b3462c7990, type: 3}
       propertyPath: vidaPlayer
       value: 

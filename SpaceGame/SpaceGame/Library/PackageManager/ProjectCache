@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637469014120143788
+      ticks: 637477659733480112
     m_Hash: 4004326711
   m_LockFileStatus:
     m_FilePath: C:/msys64/home/Lenovo/SpaceInvadersAndroid/SpaceGame/SpaceGame/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637474170010238637
+      ticks: 637477674374396059
     m_Hash: 157013556
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

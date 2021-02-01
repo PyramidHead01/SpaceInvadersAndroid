@@ -15,6 +15,9 @@ TagManager:
   - ParIzqu
   - ParDer
   - Vida
+  - Fire
+  - BotIzq
+  - BotDer
   layers:
   - Default
   - TransparentFX

@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\controladorEnemigo.cs" />
     <Compile Include="Assets\Scripts\Colisiones\colBalaEnemiga.cs" />
     <Compile Include="Assets\Scripts\vidaPlayer.cs" />
+    <Compile Include="Assets\Scripts\controladorBotones.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

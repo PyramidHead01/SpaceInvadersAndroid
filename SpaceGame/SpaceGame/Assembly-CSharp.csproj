@@ -62,11 +62,13 @@
     <Compile Include="Assets\Scripts\Colisiones\colMuro.cs" />
     <Compile Include="Assets\Scripts\disparar.cs" />
     <Compile Include="Assets\Scripts\Colisiones\colBalaPlayer.cs" />
+    <Compile Include="Assets\Scripts\controladorBotones.cs" />
     <Compile Include="Assets\Scripts\moverPlayer.cs" />
     <Compile Include="Assets\Scripts\controladorEnemigo.cs" />
     <Compile Include="Assets\Scripts\Colisiones\colBalaEnemiga.cs" />
     <Compile Include="Assets\Scripts\vidaPlayer.cs" />
-    <Compile Include="Assets\Scripts\controladorBotones.cs" />
+    <Compile Include="Assets\Scripts\ControladorResultado.cs" />
+    <Compile Include="Assets\Scripts\ControladorInicio.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

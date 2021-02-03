@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class colEnemigo : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class colEnemigo : MonoBehaviour
     controladorEnemigos controladorEnemigos;
     public AudioClip clipMuerte;
     AudioSource sonMuerte;
+    Text puntuacion;
+    public int punt = 10;
 
     //vidaPlayer vidaPlayer;
 
@@ -17,7 +20,8 @@ public class colEnemigo : MonoBehaviour
         #region AsignarVariables
         sonMuerte = GameObject.FindWithTag("SonIdoEfectos").GetComponent<AudioSource>();
         controladorEnemigos = GameObject.FindWithTag("contrEnemigos").GetComponent<controladorEnemigos>();
-        //vidaPlayer = GameObject.FindWithTag("Player").GetComponent<vidaPlayer>();
+        puntuacion = GameObject.FindWithTag("Puntuacion").GetComponent<Text>();
+        //vidaPlayer = GameObject.FindWithTag("Player").GetComponent<vidaPlayer>(); 
         #endregion
     }
 
@@ -38,6 +42,10 @@ public class colEnemigo : MonoBehaviour
     {
         if (col.gameObject.tag == "BalaPlayer")
         {
+            int.TryParse(puntuacion.text, out int puntosInt);
+            puntosInt += punt;
+            puntuacion.text = puntosInt.ToString();
+
             sonMuerte.PlayOneShot(clipMuerte);
             controladorEnemigos.speed = controladorEnemigos.CambiarSpeed();
             Destroy(gameObject);

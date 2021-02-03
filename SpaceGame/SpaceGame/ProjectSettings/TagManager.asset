@@ -18,6 +18,7 @@ TagManager:
   - Fire
   - BotIzq
   - BotDer
+  - Puntuacion
   layers:
   - Default
   - TransparentFX

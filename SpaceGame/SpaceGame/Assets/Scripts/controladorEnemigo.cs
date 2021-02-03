@@ -70,7 +70,7 @@ public class controladorEnemigo : MonoBehaviour
 
         if (collision.gameObject.tag == "ParIzqu" || collision.gameObject.tag == "ParDer")
         {
-            posEnemgios.position = new Vector3(posEnemgios.position.x, posEnemgios.position.y - 0.25f, posEnemgios.position.z);
+            posEnemgios.position = new Vector3(posEnemgios.position.x, posEnemgios.position.y - 0.1f, posEnemgios.position.z);
         }
 
         #endregion

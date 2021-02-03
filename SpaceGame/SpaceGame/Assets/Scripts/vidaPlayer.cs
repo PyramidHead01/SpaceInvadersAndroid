@@ -10,7 +10,7 @@ public class vidaPlayer : MonoBehaviour
     int vidaAnt = 3;
     public Image[] imgVidas;
     public Text txVidas;
-    GameObject playerInGame;
+    public GameObject playerInGame;
     public GameObject playerPrefab;
     public float tiempoRenacer;
 
@@ -27,12 +27,7 @@ public class vidaPlayer : MonoBehaviour
     void Update()
     {
 
-        if(vida == 0)
-        {
-            Destroy(playerInGame);
-            Debug.Log("YOU DIED");
-            txVidas.text = "YOU DIED BITCH";
-        }
+
 
         if(vidaAnt != vida)
         {

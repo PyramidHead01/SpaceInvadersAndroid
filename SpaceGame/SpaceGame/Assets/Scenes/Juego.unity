@@ -202,6 +202,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b7e2742efc0aac4c9543778418f03b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  victSon: {fileID: 8300000, guid: 124e3ba9554091849aa4e6d038ca8e80, type: 3}
+  derrSon: {fileID: 8300000, guid: 4901a05228b922940822a3051eb1edbb, type: 3}
 --- !u!1 &37327682
 GameObject:
   m_ObjectHideFlags: 0
@@ -5814,23 +5816,14 @@ MonoBehaviour:
   - {fileID: 519819216}
   - {fileID: 1817201774}
   - {fileID: 299273913}
-  - {fileID: 2005877250}
-  - {fileID: 784750837}
-  - {fileID: 1022902493}
-  - {fileID: 1829073153}
-  - {fileID: 2073003650}
-  - {fileID: 873248933}
-  - {fileID: 97634339}
-  - {fileID: 1791486789}
-  - {fileID: 1441700434}
-  - {fileID: 571110018}
-  - {fileID: 1708625183}
   tMax: 1
   movimientoPos: 1
-  enemigosTotales: 55
+  enemigosTotales: 44
   enemigosActuales: 55
   speed: 0.05
   contMax: 1
+  contRes: 0.005
+  contOr: 0
 --- !u!1 &608757931
 GameObject:
   m_ObjectHideFlags: 0

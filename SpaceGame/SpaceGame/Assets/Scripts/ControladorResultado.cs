@@ -11,10 +11,14 @@ public class ControladorResultado : MonoBehaviour
     controladorEnemigos controladorEnemigos;
     Text puntuacion;
 
+    AudioSource son;
+    public AudioClip victSon, derrSon;
+
     void Awake()
     {
         //Le doy a las variables los compontes respectivos
         #region AsignarVariables
+        son = GameObject.FindWithTag("SonIdoEfectos").GetComponent<AudioSource>();
         vidaPlayer = GameObject.FindWithTag("Vida").GetComponent<vidaPlayer>();
         controladorEnemigos = GameObject.FindWithTag("contrEnemigos").GetComponent<controladorEnemigos>();
         puntuacion = GameObject.FindWithTag("Puntuacion").GetComponent<Text>();
@@ -29,7 +33,7 @@ public class ControladorResultado : MonoBehaviour
 
     void Update()
     {
-        if(controladorEnemigos.enemigosActuales == 11)
+        if(controladorEnemigos.enemigosActuales == 0)
         {
             StartCoroutine(Victoria());
         }
@@ -43,10 +47,13 @@ public class ControladorResultado : MonoBehaviour
 
     IEnumerator Victoria()
     {
+        float victSonDur = victSon.length;
+        son.PlayOneShot(victSon);
+        victSon = null;
         int.TryParse(puntuacion.text, out int puntosInt);
         PlayerPrefs.SetInt("puntuacion", puntosInt);
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(victSonDur + 0.5f);
 
         SceneManager.LoadScene("Juego");
 
@@ -54,11 +61,14 @@ public class ControladorResultado : MonoBehaviour
 
     IEnumerator Muerte()
     {
+        float derrSonDur = derrSon.length;
+        son.PlayOneShot(derrSon);
+        derrSon = null;
         Destroy(vidaPlayer.playerInGame);
         vidaPlayer.txVidas.text = "YOU DIED";
         PlayerPrefs.SetInt("puntuacion", 0);
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(derrSonDur);
 
         SceneManager.LoadScene("Inicio");
 

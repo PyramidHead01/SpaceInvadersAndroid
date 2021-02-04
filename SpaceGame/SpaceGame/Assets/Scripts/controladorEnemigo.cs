@@ -28,7 +28,7 @@ public class controladorEnemigo : MonoBehaviour
 
         contador += Time.deltaTime;
 
-        if (contador >= controladorEnemigos.contMax)
+        if (contador >= (controladorEnemigos.contMax + controladorEnemigos.contRes))
         {
 
             //speed = 0.5f;
@@ -79,7 +79,6 @@ public class controladorEnemigo : MonoBehaviour
         {
             posEnemgios.position = new Vector3(posEnemgios.position.x, posEnemgios.position.y - 0.1f, posEnemgios.position.z);
         }
-
         #endregion
 
     }

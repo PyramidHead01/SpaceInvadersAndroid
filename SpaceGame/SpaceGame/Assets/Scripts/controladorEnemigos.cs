@@ -10,11 +10,17 @@ public class controladorEnemigos : MonoBehaviour
     public float tMax;
     public bool movimientoPos = true;
     public int enemigosTotales = 55, enemigosActuales;
-    public float speed = 0.5f, contMax = 1;
+    //0.005
+    public float speed = 0.5f, contMax = 2, contRes = 0.01f, contOr;
 
     void Awake()
     {
         enemigosActuales = enemigosTotales;
+    }
+
+    void Start()
+    {
+        contOr = contMax;
     }
 
     void Update()
@@ -51,7 +57,10 @@ public class controladorEnemigos : MonoBehaviour
         enemigosActuales--;
 
         //if (enemigosActuales == enemigosTotales || speed >= 1.7f)
-            //return speed;
+        //return speed;
+
+        if (enemigosActuales == enemigosTotales || contMax <= contRes)
+            return contRes;
 
         //Quizas ajustar la velocidad despues???
         return ((contMax * enemigosActuales) / enemigosTotales);
@@ -59,6 +68,10 @@ public class controladorEnemigos : MonoBehaviour
 
     }
 
+    /*
+     * enemigosTotales      enemigosActuales
+     * contMax              x
+     */
 
     public void PosibilidadDisparo()
     {
@@ -87,9 +100,9 @@ public class controladorEnemigos : MonoBehaviour
                     disparar[j].DisparoEnemigo();
                     j = -1;
                 }
-                if (i == x && speed > 1)
+                if (i == x && contMax < 0.5f)
                 {
-                    disparar[x].DisparoEnemigo();
+                    //disparar[x].DisparoEnemigo();
                     x = -1;
                 }
             }

@@ -45,6 +45,7 @@ public class vidaPlayer : MonoBehaviour
             foreach (Image vid in imgVidas)
             {
                 Destroy(vid);
+                Destroy(gameObject);
             }
         }
 

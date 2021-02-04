@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: 831347929658676124}
   - component: {fileID: 7154728891309336255}
   - component: {fileID: 2967208196639297960}
-  - component: {fileID: 8145999980379612434}
   - component: {fileID: 7355796422464080356}
   m_Layer: 0
   m_Name: Ovni
-  m_TagString: Enemigo
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,21 +132,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8145999980379612434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941629865081195809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26e9ae69034b62e4a984fe59b5044071, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprAlien:
-  - {fileID: 4366227052944366175, guid: dd30af0ce3645d7448beb5de423a7279, type: 3}
-  - {fileID: 4366227052944366175, guid: dd30af0ce3645d7448beb5de423a7279, type: 3}
 --- !u!114 &7355796422464080356
 MonoBehaviour:
   m_ObjectHideFlags: 0

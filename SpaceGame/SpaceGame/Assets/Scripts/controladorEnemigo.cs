@@ -9,6 +9,8 @@ public class controladorEnemigo : MonoBehaviour
     Transform posEnemgios;
     controladorEnemigos controladorEnemigos;
     float contador = 0;
+    public Sprite[] sprAlien;
+    SpriteRenderer sprPersonaje;
     #endregion
 
     void Awake()
@@ -17,6 +19,7 @@ public class controladorEnemigo : MonoBehaviour
         #region AsignarVariables
         controladorEnemigos = GameObject.FindWithTag("contrEnemigos").GetComponent<controladorEnemigos>();
         posEnemgios = GameObject.FindWithTag("contrEnemigos").GetComponent<Transform>();
+        sprPersonaje = GetComponent<SpriteRenderer>();
         #endregion
     }
 
@@ -25,7 +28,7 @@ public class controladorEnemigo : MonoBehaviour
 
         contador += Time.deltaTime;
 
-        if (contador >= 1)
+        if (contador >= controladorEnemigos.contMax)
         {
 
             //speed = 0.5f;
@@ -42,6 +45,10 @@ public class controladorEnemigo : MonoBehaviour
             }
             #endregion
 
+            if(sprPersonaje.sprite == sprAlien[1])
+                sprPersonaje.sprite = sprAlien[0];
+            else
+                sprPersonaje.sprite = sprAlien[1];
 
             contador = 0;
         }

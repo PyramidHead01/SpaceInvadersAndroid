@@ -10,7 +10,7 @@ public class controladorEnemigos : MonoBehaviour
     public float tMax;
     public bool movimientoPos = true;
     public int enemigosTotales = 55, enemigosActuales;
-    public float speed = 0.5f;
+    public float speed = 0.5f, contMax = 1;
 
     void Awake()
     {
@@ -28,6 +28,8 @@ public class controladorEnemigos : MonoBehaviour
             contador = 0;
         }
 
+        Debug.Log(contMax);
+
     }
 
     public float CambiarSpeed()
@@ -43,6 +45,21 @@ public class controladorEnemigos : MonoBehaviour
 
     }
 
+    public float CambiarContMax()
+    {
+
+        enemigosActuales--;
+
+        //if (enemigosActuales == enemigosTotales || speed >= 1.7f)
+            //return speed;
+
+        //Quizas ajustar la velocidad despues???
+        return ((contMax * enemigosActuales) / enemigosTotales);
+        //return ((speed * enemigosTotales) / enemigosActuales);
+
+    }
+
+
     public void PosibilidadDisparo()
     {
 
@@ -51,7 +68,8 @@ public class controladorEnemigos : MonoBehaviour
         do
         {
             j = Random.Range(0, enemigosTotales - 1);
-            if(speed > 1)
+            //if(speed > 1)
+            if (contMax < 0.5f)
                 x = Random.Range(0, enemigosTotales - 1);
         } while (j == x);
 
@@ -81,7 +99,7 @@ public class controladorEnemigos : MonoBehaviour
             }
             catch (System.ArgumentOutOfRangeException)
             {
-            PosibilidadDisparo();
+                PosibilidadDisparo();
             }
         }
     }

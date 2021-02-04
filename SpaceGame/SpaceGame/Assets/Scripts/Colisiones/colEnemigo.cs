@@ -47,7 +47,8 @@ public class colEnemigo : MonoBehaviour
             puntuacion.text = puntosInt.ToString();
 
             sonMuerte.PlayOneShot(clipMuerte);
-            controladorEnemigos.speed = controladorEnemigos.CambiarSpeed();
+            //controladorEnemigos.speed = controladorEnemigos.CambiarSpeed();
+            controladorEnemigos.contMax = controladorEnemigos.CambiarContMax();
             Destroy(gameObject);
         }
     }

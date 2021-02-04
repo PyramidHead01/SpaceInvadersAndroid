@@ -30,7 +30,7 @@ public class colPlayer : MonoBehaviour
     {
         if (col.gameObject.tag == "Enemigo")
         {
-            Muerte();
+            MuerteInstantanea();
         }
     }
 
@@ -38,6 +38,13 @@ public class colPlayer : MonoBehaviour
     {
         sonMuerte.PlayOneShot(clipMuerte);
         vidaPlayer.vida--;
+        //Destroy(gameObject);
+    }
+
+    void MuerteInstantanea()
+    {
+        sonMuerte.PlayOneShot(clipMuerte);
+        vidaPlayer.vida = 0;
         //Destroy(gameObject);
     }
 

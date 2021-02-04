@@ -27,8 +27,6 @@ public class vidaPlayer : MonoBehaviour
     void Update()
     {
 
-
-
         if(vidaAnt != vida)
         {
 
@@ -41,6 +39,15 @@ public class vidaPlayer : MonoBehaviour
             StartCoroutine(Renacer());
 
         }   
+
+        if(vida == 0)
+        {
+            foreach (Image vid in imgVidas)
+            {
+                Destroy(vid);
+            }
+        }
+
     }
 
     IEnumerator Renacer()

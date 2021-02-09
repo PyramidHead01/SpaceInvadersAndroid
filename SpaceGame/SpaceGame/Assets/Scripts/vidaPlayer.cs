@@ -17,6 +17,12 @@ public class vidaPlayer : MonoBehaviour
     void Awake()
     {
         playerInGame = GameObject.FindWithTag("Player");
+        if(PlayerPrefs.GetInt("vidas") < 3) 
+        {
+            Debug.Log(PlayerPrefs.GetInt("vidas"));
+            Debug.Log("Calculando vidas");
+            AjustarVida();
+        }
     }
 
     void Start()
@@ -27,7 +33,7 @@ public class vidaPlayer : MonoBehaviour
     void Update()
     {
 
-        if(vidaAnt != vida)
+        /*if(vidaAnt != vida)
         {
 
             vidaAnt = vida;
@@ -38,7 +44,7 @@ public class vidaPlayer : MonoBehaviour
 
             StartCoroutine(Renacer());
 
-        }   
+        } */  
 
         if(vida == 0)
         {
@@ -48,6 +54,20 @@ public class vidaPlayer : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+
+    }
+
+    void AjustarVida()
+    {
+        vida = PlayerPrefs.GetInt("vidas");
+
+        txVidas.text = vida.ToString();
+
+        for (int i = vida; i > 3; i++)
+        {
+            Destroy(imgVidas[i++]);
+        }
+
 
     }
 

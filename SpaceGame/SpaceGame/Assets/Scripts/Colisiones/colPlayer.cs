@@ -38,6 +38,7 @@ public class colPlayer : MonoBehaviour
     {
         sonMuerte.PlayOneShot(clipMuerte);
         vidaPlayer.vida--;
+        PlayerPrefs.SetInt("vidas", vidaPlayer.vida);
         //Destroy(gameObject);
     }
 

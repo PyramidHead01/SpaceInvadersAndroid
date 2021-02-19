@@ -3,10 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class ControladorInicio : MonoBehaviour
 {
-    public void CargarJuego()
+
+    public void CargarJuego(int i)
     {
+
+        Dificultad.niv = i;
+
         PlayerPrefs.SetInt("puntuacion", 0);
-        PlayerPrefs.SetInt("vidas", 1);
+        PlayerPrefs.SetInt("vidas", 3);
 
         SceneManager.LoadScene("Juego");
     }

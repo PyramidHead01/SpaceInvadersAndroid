@@ -14,40 +14,57 @@ public class vidaPlayer : MonoBehaviour
     public GameObject playerPrefab;
     public float tiempoRenacer;
 
+    public bool resInicio = false;
+
     void Awake()
     {
         playerInGame = GameObject.FindWithTag("Player");
-        if(PlayerPrefs.GetInt("vidas") < 3) 
-        {
-            Debug.Log(PlayerPrefs.GetInt("vidas"));
-            Debug.Log("Calculando vidas");
-            AjustarVida();
-        }
+
     }
 
     void Start()
     {
         txVidas.text = vida.ToString();
+        if (PlayerPrefs.GetInt("vidas") < 3)
+        {
+            Debug.Log(PlayerPrefs.GetInt("vidas"));
+            Debug.Log("Calculando vidas");
+
+            resInicio = true;
+
+            AjustarVida();
+        }
     }
 
     void Update()
     {
 
-        /*if(vidaAnt != vida)
+        if(vidaAnt != vida)
         {
+            if (resInicio)
+            {
+                resInicio = false;
+            }
+            else
+            {
+
+                Destroy(imgVidas[vida]);
+                Destroy(playerInGame);
+
+            }
 
             vidaAnt = vida;
             txVidas.text = vida.ToString();
 
-            Destroy(imgVidas[vida]);
-            Destroy(playerInGame);
-
             StartCoroutine(Renacer());
 
-        } */  
+        }
 
         if(vida == 0)
         {
+
+            Debug.Log("Fin del juego");
+
             foreach (Image vid in imgVidas)
             {
                 Destroy(vid);
@@ -63,10 +80,21 @@ public class vidaPlayer : MonoBehaviour
 
         txVidas.text = vida.ToString();
 
-        for (int i = vida; i > 3; i++)
+        switch (PlayerPrefs.GetInt("vidas"))
         {
-            Destroy(imgVidas[i++]);
+            case 1:
+                Destroy(imgVidas[1]);
+                Destroy(imgVidas[2]);
+                break;
+            case 2:
+                Destroy(imgVidas[2]);
+                break;
         }
+
+        /*for (int i = vida; i > 4; i++)
+        {
+            Destroy(imgVidas[i]);
+        }*/
 
 
     }

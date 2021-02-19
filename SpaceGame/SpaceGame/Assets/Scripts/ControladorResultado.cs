@@ -40,6 +40,7 @@ public class ControladorResultado : MonoBehaviour
 
         if (vidaPlayer.vida == 0)
         {
+
             StartCoroutine(Muerte());
         }
 
@@ -63,7 +64,7 @@ public class ControladorResultado : MonoBehaviour
     {
         float derrSonDur = derrSon.length;
         son.PlayOneShot(derrSon);
-        derrSon = null;
+        //derrSon = null;
         Destroy(vidaPlayer.playerInGame);
         vidaPlayer.txVidas.text = "YOU DIED";
         PlayerPrefs.SetInt("puntuacion", 0);
